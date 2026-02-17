@@ -56,7 +56,7 @@ export default function Footer() {
         <motion.h2
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-[15vw] md:text-[13vw] text-[#d4c9b8]/80 uppercase tracking-wide leading-none text-center select-none z-10 relative"
         >

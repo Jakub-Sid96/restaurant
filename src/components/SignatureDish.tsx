@@ -11,7 +11,7 @@ export default function SignatureDish() {
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="py-24 px-6 md:px-16 lg:pl-[max(2rem,calc((100vw-1400px)/2+64px))]"
         >
@@ -36,7 +36,7 @@ export default function SignatureDish() {
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-[4/5] md:aspect-auto md:h-full md:min-h-[600px] overflow-hidden"
         >

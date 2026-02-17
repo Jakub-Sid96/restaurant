@@ -35,7 +35,7 @@ function Stars({ delay }: { delay: number }) {
           key={i}
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{
             delay: delay + i * 0.05,
             type: "spring",
@@ -83,7 +83,7 @@ export default function Testimonials() {
               key={t.user}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ margin: "-50px" }}
               transition={{ delay: i * 0.12, duration: 0.6 }}
             >
               <Stars delay={i * 0.12 + 0.2} />

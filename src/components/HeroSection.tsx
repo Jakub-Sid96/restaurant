@@ -49,7 +49,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           className="mt-8 w-16 h-px bg-white/50 origin-left"
         />
@@ -57,7 +57,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-6 text-white/80 text-base md:text-lg max-w-xl font-sans leading-relaxed"
         >
@@ -69,7 +69,7 @@ export default function HeroSection() {
           href="#booking"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ delay: 0.7, duration: 0.6 }}
           className="mt-8 inline-flex items-center gap-2 text-white font-sans text-sm tracking-widest uppercase group self-start md:self-end border border-white/20 px-6 py-3 hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.08)] transition-all duration-500"
         >
@@ -79,6 +79,15 @@ export default function HeroSection() {
           </span>
         </motion.a>
       </div>
+
+      {/* Bottom shadow bleed */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{}}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="absolute -bottom-px left-0 right-0 h-32 z-20 bg-gradient-to-b from-transparent to-black/50 pointer-events-none"
+      />
     </section>
   );
 }

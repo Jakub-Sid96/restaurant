@@ -59,7 +59,7 @@ export default function FeaturesGrid() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
@@ -77,7 +77,7 @@ export default function FeaturesGrid() {
               key={feature.title}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
               className={`group cursor-pointer ${feature.wrapperClass}`}
             >

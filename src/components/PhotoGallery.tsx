@@ -46,7 +46,7 @@ export default function PhotoGallery() {
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{}}
         transition={{ duration: 0.6 }}
         className="text-center font-serif text-3xl md:text-5xl text-foreground mb-10"
       >
@@ -76,7 +76,7 @@ export default function PhotoGallery() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{}}
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex justify-center mt-10"
       >

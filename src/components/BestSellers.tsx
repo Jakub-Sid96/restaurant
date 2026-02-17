@@ -35,7 +35,7 @@ export default function BestSellers() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="lg:col-span-1 flex flex-col justify-center p-8 md:p-12 overflow-hidden"
         >
@@ -68,7 +68,7 @@ export default function BestSellers() {
               key={product.name}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ margin: "-50px" }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
               className="relative aspect-[3/4] lg:aspect-auto lg:h-full lg:min-h-[500px] overflow-hidden group cursor-pointer"
             >

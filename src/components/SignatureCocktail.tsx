@@ -14,7 +14,7 @@ export default function SignatureCocktail() {
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-[3/4] md:aspect-auto md:h-full md:min-h-[600px] overflow-hidden"
         >
@@ -31,7 +31,7 @@ export default function SignatureCocktail() {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="py-24 px-6 md:px-16 lg:pr-[max(2rem,calc((100vw-1400px)/2+64px))]"
         >
@@ -55,7 +55,7 @@ export default function SignatureCocktail() {
             href="#bar"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ delay: 0.6 }}
             className="mt-10 inline-flex items-center gap-2 text-white/90 font-sans text-sm tracking-wider group"
           >

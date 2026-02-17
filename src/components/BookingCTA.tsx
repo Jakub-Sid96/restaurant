@@ -13,7 +13,7 @@ export default function BookingCTA() {
       <motion.div
         initial={{ opacity: 0, x: -80 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ margin: "-100px" }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="hidden md:block absolute left-[10%] top-[85%] -translate-y-1/2 w-[700px] lg:w-[800px] rotate-45"
       >
@@ -31,7 +31,7 @@ export default function BookingCTA() {
       <motion.div
         initial={{ opacity: 0, x: 80 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ margin: "-100px" }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="hidden md:block absolute right-0 top-[5%] -translate-y-1/2 w-[700px] lg:w-[800px] -rotate-45"
       >
@@ -50,7 +50,7 @@ export default function BookingCTA() {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center max-w-2xl"
         >
